@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  /* Refined, high-contrast palette replacing standard slate-100 with warmer zinc-50 */
+  --color-slate-100: #fafafa; /* Warm zinc-50 equivalent */
+  --color-surface-muted: #f4f4f5; /* zinc-100 */
+  --color-surface-base: #fafafa; /* zinc-50 */
+
+  /* Subtle elevated box-shadows for navigation cards and interactive elements */
+  --shadow-nav-card: 0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px -1px rgba(15, 23, 42, 0.08);
+  --shadow-nav-card-hover: 0 4px 8px -1px rgba(15, 23, 42, 0.12), 0 2px 4px -2px rgba(15, 23, 42, 0.08);
+  --shadow-nav-card-active: 0 4px 14px -2px rgba(37, 99, 235, 0.38);
+}
+
+/* Base layer overrides for high-contrast presentation */
+body {
+  background-color: #fafafa;
+  color: #0f172a;
+}
+
+/* Elevated visual hierarchy utilities */
+.nav-card-item {
+  box-shadow: var(--shadow-nav-card);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-card-item:hover {
+  box-shadow: var(--shadow-nav-card-hover);
+}
+
+.nav-card-item.active {
+  box-shadow: var(--shadow-nav-card-active);
+}

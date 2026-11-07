@@ -1,0 +1,6 @@
+{
+  "name": "Smart Traffic Light Simulation",
+  "description": "AI-powered intelligent traffic management system with adaptive signal optimization, computer vision vehicle detection, real-time 4-way intersection simulation, and analytical comparison.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
